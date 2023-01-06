@@ -4,17 +4,14 @@ import './Name.css';
 function Name() {
     return(
         <>
-            <p>
-            Full Stack Developer and Educator
-            </p>
-        <a
-            className="Resume-link"
-            href="/about"
-            target="_self"
-            rel="noopener noreferrer"
-        >
-        About Me
-        </a> 
+        <p id="my-name">
+            Dave McConeghy
+        </p>
+        <p id="my-title">
+        Full Stack Developer
+        </p>
+
+        
     </>);
 }
 

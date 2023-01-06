@@ -1,10 +1,13 @@
 import './App.css';
 import LandingPage from './LandingPage';
+import BorderMask from './BorderMask';
 
 function App() {
   return (
-    <LandingPage>
-    </LandingPage>
+    <>
+    <BorderMask></BorderMask>
+    <LandingPage></LandingPage>
+    </>
   );
 }
 

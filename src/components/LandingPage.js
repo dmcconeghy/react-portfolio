@@ -4,19 +4,18 @@ import React from "react";
 import "./LandingPage.css";
 
 // Components
-import BorderMask from "./BorderMask";
-import Name from "./Name";
+import Header from "./Header";
 import Project from "./Project";
+import AboutMe from "./AboutMe";
 
 function LandingPage(){
    return (
-    <div id="Page" class="is-dark">
-    
-    <BorderMask></BorderMask>
-    <Name></Name>
-    <Project></Project>   
-      
-    </div>
+      <div id="Page" class="is-dark">
+         <Header></Header>
+         
+         <Project></Project>
+         <AboutMe></AboutMe>  
+      </div>
    );
 }
 
