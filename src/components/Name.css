@@ -1,0 +1,11 @@
+h1 {
+    line-height: 115%;
+    padding: 25px 0px 25px;
+}
+
+
+#title {
+    /* Perhaps this should be dynamic */
+    padding-left: 0px;
+    /* padding-left: 12px; */
+}

@@ -1,12 +1,19 @@
 import './App.css';
-import LandingPage from './LandingPage';
+import HomePage from './HomePage';
 import BorderMask from './BorderMask';
+import SpecialEffects from './SpecialEffects';
 
 function App() {
   return (
     <>
-    <BorderMask></BorderMask>
-    <LandingPage></LandingPage>
+      
+        {/* <SpecialEffects></SpecialEffects> */}
+        <BorderMask></BorderMask>
+        
+        <HomePage></HomePage>
+        
+            
+         
     </>
   );
 }

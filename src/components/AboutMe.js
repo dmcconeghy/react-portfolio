@@ -4,12 +4,12 @@ import './AboutMe.css';
 function AboutMe() {
     return (
         <a
-            className="Resume-link"
+            className="about-me"
             href="/about"
             target="_self"
             rel="noopener noreferrer"
         >
-        About Me
+        ABOUT ME
         </a> 
     )
 }

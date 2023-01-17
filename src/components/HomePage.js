@@ -1,7 +1,7 @@
 import React from "react";
 
 // CSS
-import "./LandingPage.css";
+import "./HomePage.css";
 
 // Components
 import Header from "./Header";
@@ -10,7 +10,7 @@ import AboutMe from "./AboutMe";
 
 function LandingPage(){
    return (
-      <div id="Page" class="is-dark">
+      <div id="page" className="is-dark">
          <Header></Header>
          
          <Project></Project>

@@ -1,0 +1,23 @@
+.project {
+    /* Add a dynamic sizer for this. */
+  
+    position: absolute;
+    right: 52px;
+    bottom: 104px;
+
+}
+
+li {
+    list-style: none;
+    text-align: end;
+    line-height: 150%;
+    margin: 15px; 
+    
+}
+
+ul:hover {
+    color: rgb(255, 166, 0);
+    text-decoration: none;
+    font-weight:bold;
+    
+}

@@ -4,12 +4,12 @@ import './Name.css';
 function Name() {
     return(
         <>
-        <p id="my-name">
+        <h1 id="name">
             Dave McConeghy
-        </p>
-        <p id="my-title">
+        </h1>
+        <h6 id="title">
         Full Stack Developer
-        </p>
+        </h6>
 
         
     </>);
