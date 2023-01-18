@@ -4,8 +4,8 @@ h1 {
 }
 
 
-#title {
+#title, #name {
     /* Perhaps this should be dynamic */
-    padding-left: 0px;
+    margin-left: 25px;
     /* padding-left: 12px; */
 }

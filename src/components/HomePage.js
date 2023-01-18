@@ -5,16 +5,18 @@ import "./HomePage.css";
 
 // Components
 import Header from "./Header";
-import Project from "./Project";
-import AboutMe from "./AboutMe";
+import Main from "./Main";
+import Footer from "./Footer";
 
 function LandingPage(){
    return (
       <div id="page" className="is-dark">
          <Header></Header>
          
-         <Project></Project>
-         <AboutMe></AboutMe>  
+         <Main></Main>
+         
+         <Footer></Footer>
+        
       </div>
    );
 }

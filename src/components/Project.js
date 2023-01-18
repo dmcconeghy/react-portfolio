@@ -7,16 +7,7 @@ import "./Project.css";
 function Project(){
    return (
     <div className="project is-dark"> 
-    <li>
-        <ul>ProjectRS</ul>
-        <ul>FlashBack</ul>
-        <ul>BookShelf</ul>
-        <ul>BirdList</ul>
-        <ul>NJO Quilts</ul>
-        <ul>Captain Emil</ul>
-        <ul>Games</ul>
-        <ul>Snippets</ul>
-    </li>
+        TEST
     </div>
    );
 }
