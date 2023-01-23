@@ -33,13 +33,13 @@ function lowPolyEffect(){
 
     function onLoad()
     {
-        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
         let specialEffectsDiv = document.querySelector('#special-effects');
         svg.setAttribute('width',specialEffectsDiv.outerWidth);
         svg.setAttribute('height',specialEffectsDiv.outerHeight);
         specialEffectsDiv.appendChild(svg);
 
-        var unitSize = (window.innerWidth+window.innerHeight)/15;
+        let unitSize = (window.innerWidth+window.innerHeight)/15;
         numPointsX = Math.ceil(window.innerWidth/unitSize)+1;
         numPointsY = Math.ceil(window.innerHeight/unitSize)+1;
         unitWidth = Math.ceil(window.innerWidth/(numPointsX-1));
@@ -47,29 +47,29 @@ function lowPolyEffect(){
 
         points = [];
 
-        for(var y = 0; y < numPointsY; y++) {
-            for(var x = 0; x < numPointsX; x++) {
+        for(let y = 0; y < numPointsY; y++) {
+            for(let x = 0; x < numPointsX; x++) {
                 points.push({x:unitWidth*x, y:unitHeight*y, originX:unitWidth*x, originY:unitHeight*y});
             }
         }
 
         randomize();
 
-        for(var i = 0; i < points.length; i++) {
+        for(let i = 0; i < points.length; i++) {
             if(points[i].originX !== unitWidth*(numPointsX-1) && points[i].originY !== unitHeight*(numPointsY-1)) {
-                var topLeftX = points[i].x;
-                var topLeftY = points[i].y;
-                var topRightX = points[i+1].x;
-                var topRightY = points[i+1].y;
-                var bottomLeftX = points[i+numPointsX].x;
-                var bottomLeftY = points[i+numPointsX].y;
-                var bottomRightX = points[i+numPointsX+1].x;
-                var bottomRightY = points[i+numPointsX+1].y;
+                let topLeftX = points[i].x;
+                let topLeftY = points[i].y;
+                let topRightX = points[i+1].x;
+                let topRightY = points[i+1].y;
+                let bottomLeftX = points[i+numPointsX].x;
+                let bottomLeftY = points[i+numPointsX].y;
+                let bottomRightX = points[i+numPointsX+1].x;
+                let bottomRightY = points[i+numPointsX+1].y;
 
-                var rando = Math.floor(Math.random()*2);
+                let rando = Math.floor(Math.random()*2);
 
-                for(var n = 0; n < 2; n++) {
-                    var polygon = document.createElementNS(svg.namespaceURI, 'polygon');
+                for(let n = 0; n < 2; n++) {
+                    let polygon = document.createElementNS(svg.namespaceURI, 'polygon');
 
                     if(rando===0) {
                         if(n===0) {
@@ -97,7 +97,7 @@ function lowPolyEffect(){
                         }
                     }
                     polygon.setAttribute('fill','rgba(0,0,0,'+(Math.random()/3)+')');
-                    var animate = document.createElementNS('http://www.w3.org/2000/svg','animate');
+                    let animate = document.createElementNS('http://www.w3.org/2000/svg','animate');
                     animate.setAttribute('fill','freeze');
                     animate.setAttribute('attributeName','points');
                     animate.setAttribute('dur',refreshDuration+'ms');

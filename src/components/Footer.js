@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsMenu from "./ProjectsMenu";
+import { Link } from "react-router-dom";
 
 import "./Footer.css";
 
@@ -7,13 +7,15 @@ function Footer() {
     return (
         <div id="footer">
             <div className="footer-item">
-                <a href="/"><h3>ABOUT ME</h3> </a>            
+               <Link to={'about'}><h3>ABOUT ME</h3></Link>            
             </div>
             <div className="footer-item">
-               <a href="/"><h3>CONTACT</h3></a>
+                <Link to={'contact'}><h3>CONTACT</h3></Link>
+               
             </div>
             <div className="footer-item">
-                <ProjectsMenu></ProjectsMenu>
+                <Link to={'projects'}><h3>PROJECTS</h3></Link>
+                
             </div>            
         </div>
     );
