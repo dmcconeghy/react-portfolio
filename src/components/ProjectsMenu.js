@@ -1,14 +1,17 @@
 import React from "react";
 import "./ProjectsMenu.css";
 
-
+// This component is not currently in use. 
+// It was used to display a menu of projects when the user clicked on a floating Projects link in the footer.
+// Since the menu was moved to the footer, this mechanic needs to work differently. 
 
 export default function ProjectsMenu() {
   <>
   </>
 };
 
-// This menu is not working as expected. I'm not sure why yet. I'm going to leave it disabled for now.
+
+
 
   // return (
   //   <div id="where">
