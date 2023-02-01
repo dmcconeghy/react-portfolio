@@ -9,6 +9,7 @@ import ErrorPage from "./routes/error-page";
 import Contact from "./routes/contact";
 import AboutMe from "./routes/about-me";
 import Projects from "./routes/projects";
+import Circles from "./routes/circles";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/circles",
+        element: <Circles />,
       }
     ],
   },

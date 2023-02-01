@@ -1,0 +1,19 @@
+#circles {
+    background-color: tan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 1px;
+}
+
+.circle:hover {
+    background-color: white;
+}
