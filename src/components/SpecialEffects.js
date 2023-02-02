@@ -1,6 +1,13 @@
 import React from "react";
 import "./SpecialEffects.css";
 
+/*
+* Special Effects  will contain a screen with changing designs. 
+* The designs will be created using SVGs and CSS animations.
+* The goal of this is to work on my CSS and JS Canvas skills. 
+*/
+// 
+
 function SpecialEffects(){
    return (
     <div id="special-effects">
